@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-style: dotted;
+        }
+        th,td{
+            border-style: ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Reserving a Room at Red Abbey Ressort</h1>
+    <h2>Rooms and Prices</h2>
+    
+    <table>
+        <thead>Our guest rooms</thead>
+        <tr>
+            <th>Room type</th>
+            <th>Maximum occupancy</th>
+            <th>AVG price per night</th>
+        </tr>
+        <tr>
+            <td>Attic Room</td>
+            <td>1</td>
+            <td>100$</td>
+        </tr>
+        <tr>
+            <td>Standard Room</td>
+            <td>2</td>
+            <td>170$</td>
+        </tr>
+        <tr>
+            <td>Garden view Room</td>
+            <td>4</td>
+            <td>220$</td>
+        </tr>
+    </table>
+    <h2>Submit a resrvation request</h2>
+    <form>
+        <label for="firstname">First name</label> 
+            <input type="text" id="firstname" name="firstname">
+        <br>
+        <label>Last name </label>
+            <input type="text"><br>
+        <label>Phone number<input type="tel"></label><br>
+        <label>Email<input type="email"></label>
+    </form>
+    <p>Prefered room type</p>
+    <form>
+        <input type="radio">
+        <label>Attic room</label>
+        <input type="radio">
+        <label>Standard room</label>
+        <input type="radio">
+        <label>Garden View suite</label>
+    </form>
+    <form>
+        <label>Check In:</label>
+        <input type="date">
+        <label>Check Out:</label>
+        <input type="date">
+    </form>
+    <form>
+        <p>Comment or special request</p>
+        <textarea></textarea>
+        <br>
+        <input type="submit">
+    </form>
+    <a href="index.html">Return to home</a>
+</body>
+</html>
