@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.poster{
+    background-color: yellow;
+    border: 5px dashed red;
+    width: 35%;
+    text-align: center;
+    margin: 50px auto;
+    padding: 15px;
+}
+img{
+    background-color: white;
+    width: 150px;
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+h1, h2 {
+    font-weight: 900;
+}
+h1{
+    font-size: 60px;
+    text-decoration: underline overline;
+
+}

@@ -1,0 +1,22 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+td{
+    border: 1px solid green;
+}
+th{
+    background-color: greenyellow;
+    color: white;
+    border-radius: 25px;
+}
+th:hover {
+    background-color: red;
+}
+td:hover {
+    background-color: red;
+}
