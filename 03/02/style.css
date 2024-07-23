@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol{
+    margin-top: 0;
+}
+img {
+    max-width: 100%;
+}
+  
+h1 {
+    text-align: center;
+}
+body{
+    color: white;
+    margin: 0;
+    background-color: rgb(13, 13, 147);
+}
+.centered-element{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.col{
+    width: 50%;
+    float: left;
+}
+.right-container{
+    position: relative;
+    padding-top: 700px;
+}
+.right-container .col{
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px 10px 0 10px;
+}
+.right-container .col p:nth-child(2) {
+    margin-bottom: 0;
+  
+}
+.right-container .inner{
+width: 80%;
+}
+.left-container{
+    min-height: 100vh;
+    background-image: url("world-map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.right-container img{
+    height: 100px;
+}
+form{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+label{
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+    padding: 8px 10px;
+}
+.row::after{
+    content: "";
+    display: block;
+    width: 100px;
+    clear: both;
+}

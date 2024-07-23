@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+}
+body {
+    margin: 0;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.bg-dark {
+    background-color: rgb(52, 51, 57);
+}
+  
+.bg-gray {
+    background-color: rgb(149, 147, 158);
+}
+  
+.bg-brown {
+    background-color: rgb(122, 52, 52);
+}
+  
+.bg-green {
+    background-color: rgb(101, 164, 83);
+}
+.col-40{
+    width: 40%;
+}
+.col-60{
+    width: 60%;
+}
+.col{
+    float: left;
+}
+.row::after{
+    clear: both;
+    display: block;
+    width: 100%;
+    content: "";
+}
+.inner{
+    width: 90%;
+    margin: 0 auto;
+}
+.col .inner{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.col:first-child .inner {
+    width: 100%;
+    padding-right: 50px;
+ }
+.col:last-child .inner {
+    width: 100%;
+    padding-left: 50px;
+}
+  
+ .row .col:first-child {
+    border-right: 1px solid white;
+}
+nav{
+    padding: 15px;
+}
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+ul li{
+    display: inline-block;
+}
+ul li:first-child {
+    margin-right: 15px;
+ }
+ul li:last-child {
+    float: right;
+}
+ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+header .inner{
+    padding: 100px 0;
+}
+footer .col{
+    padding: 50px 0;
+}
+header .inner a,
+button {
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 5px 10px;
+  display: inline-block;
+  background-color: transparent;
+}
+hr {
+  margin-bottom: 25px;
+}
+
+.content-box p {
+  width: 30%;
+  float: left;
+  text-transform: uppercase;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.col-50 {
+  display: inline-block;
+  width: 49%;
+}
+
+.col-50:first-child {
+  margin-right: 1%;
+}
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.form-block {
+  margin-bottom: 10px;
+}
+
+footer .col-40 {
+  text-align: center;
+}
+
+footer h2,
+footer h2 + p {
+  text-transform: uppercase;
+}
