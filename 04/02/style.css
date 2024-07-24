@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    margin-top: 0;
+}
+a {
+    text-decoration: none;
+}
+  
+img {
+    width: 100%;
+    display: block;
+}
+.inner{
+    width: 90%;
+    margin: 0 auto;
+}
+.section{
+    padding: 60px 0;
+}
+.row{
+    display: flex;
+}
+.col-33{
+    flex-basis: 33.33%;
+}
+.col-50{
+    flex-basis: 50%;
+}
+.btn{
+    display: inline-block;
+    color: gray;
+    border: 1px solid gray;
+    padding: 8px 13px;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.bg-black {
+    background-color: black;
+  }
+.text-white {
+    color: white;
+}
+  
+.bg-blue {
+    background-color: #9cdaf1;
+}
+.bg-green {
+    background-color: #a7c3a7;
+}
+.bg-pink {
+    background-color: #ffd5b3;
+}
+.bg-gray {
+    background-color: lightgray;
+}
+a.active {
+    color: #a7c3a7;
+}
+main{
+    border-bottom: 1px solid gray;
+}
+nav {
+    background-color: rgb(232, 232, 232);
+}
+  
+nav .inner.row {
+    justify-content: space-between;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+  
+nav h1 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    padding: 5px;
+}
+  
+nav ul li:not(:last-child) {
+    margin-right: 10px;
+}
+nav ul li a {
+    color: black;
+}
+nav ul li a:hover {
+    color: #a7c3a7;
+}
+.first-section h2 {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 80px 60px;
+}
+.second-section {
+    color: grey;
+    text-align: center;
+}
+  
+.second-section span {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+  
+.second-section .col-33:not(:last-child) {
+    margin-right: 30px;
+}
+.third-section .col-50 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.third-section .col-50 p {
+    color: gray;
+}
+.fourth-section .col-33 {
+    position: relative;
+}
+.fourth-section .col-33 i {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+.fifth-section h2 {
+    text-align: center;
+}
+  
+.fifth-section .testimonials .col-50:not(:last-child) {
+    margin-right: 30px;
+}
+  
+.fifth-section .testimonials .col-50.row {
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fifth-section .testimonials a {
+    color: black;
+    align-self: flex-end;
+}
+.fifth-section .img-box {
+    padding-bottom: 40px;
+}
+.fifth-section .date {
+    margin-bottom: 10px;
+}
+.fifth-section .date p {
+    margin-bottom: 0;
+}
+.fifth-section .date .bg-black.text-white {
+    padding: 18px 12px;
+    text-align: center;
+    flex-basis: 20%;
+    margin-right: 10px;
+}
+.opening-hours p {
+    text-align: center;
+    padding: 10px;
+}
+.fifth-section {
+    gap: 40px;
+}
+footer {
+    background-color: rgb(232, 232, 232);
+    padding: 30px 0;
+}
+  
+footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+footer ul li:not(:last-child) a {
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+}
+footer ul li:not(:last-child) {
+    margin-right: 5px;
+}
+  
+footer ul li:last-child a {
+    color: black;
+}
+/* TABLET  */
+@media (max-width: 768px) {
+    nav .inner ul {
+      display: none;
+    }
+    nav .text-white.bg-black {
+      flex-grow: 1;
+    }
+    .first-section h2 {
+      font-size: 1.5rem;
+      padding: 50px 30px;
+    }
+    .second-section,
+    .fifth-section {
+      display: block;
+    }
+  
+    .second-section .col-33:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 70px;
+    }
+  
+    .third-section {
+      display: none;
+    }
+  }
+  /* MOBILE  */
+@media (max-width: 425px) {
+    .first-section,
+    .fourth-section .row {
+      display: block;
+    }
+    .first-section .col-33:nth-child(2) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }

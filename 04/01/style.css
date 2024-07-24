@@ -1,0 +1,57 @@
+.parent{
+    display: flex;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.inner{
+    padding: 30px 5px;
+    border: 1px solid black;
+    flex: 0 1 15%;
+}
+.h-400{
+    height: 400px;
+}
+.inner:first-child{
+    background-color: red;
+}
+.inner:nth-child(2){
+    background-color: yellow;
+}
+.inner:last-child{
+    background-color: lightgray;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
+    justify-content: space-around;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.wrap .inner,
+.nowrap .inner {
+  flex-basis: 40%;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+    align-items: flex-end;
+}
+.self-start{
+    align-self: flex-start;
+}
+.self-end{
+    align-self: flex-end;
+}
+.self-center{
+    align-self: center;
+}
