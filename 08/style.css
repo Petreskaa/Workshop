@@ -1,0 +1,34 @@
+.banner-image{
+    background-image: url("./images/01/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-image-1{
+    background-image: url("./images/01/img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-image-2{
+    background-image: url("./images/01/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-image-3{
+    background-image: url("./images/01/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-gray{
+    background-color: lightgray;
+}
+.py-6{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.line-height{
+    line-height: 30px;
+}
