@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise II</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        height: 100vh;
+        color: #fff;
+        background-color: #343a40;
+      }
+
+      h1 {
+        font-family: "Times New Roman";
+        font-size: 50px;
+      }
+
+      p {
+        font-family: "Times New Roman";
+        font-style: italic;
+        font-size: 20px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .quotes {
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 20px;
+        color: #fff;
+      }
+
+      .quote {
+        font-size: 30px;
+      }
+
+      .author {
+        font-size: 20px;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body class="d-flex align-items-center">
+    <div class="container-fluid text-center">
+      <h1>Random Quote Generator</h1>
+      <div class="row">
+        <div class="col-6 offset-3">
+          <button
+            class="btn btn-success btn-lg btn-block my-5"
+            id="btn"
+            type="submit"
+          >
+            New Quote
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 offset-3">
+          <div class="quotes text-center bg-dark">
+            <span class="quote" id="quote">Hello, quote</span> <br />
+            <span class="author" id="author">-The World</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest Compiled Bootstrap 4.4.1 JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+

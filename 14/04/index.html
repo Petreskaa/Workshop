@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise IV</title>
+    <style>
+      body {
+        background: radial-gradient(
+            closest-corner,
+            rgba(16, 47, 70, 0) 60%,
+            rgba(16, 47, 70, 0.26)
+          ),
+          linear-gradient(108deg, #26d0ce, #1a2980 90%);
+      }
+
+      .flex-cont {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .flex-cont input {
+        display: block;
+        margin: 2em auto;
+        padding: 0.5em 0.25em;
+        border: none;
+        border-radius: 0.2em;
+        width: 15em;
+        font-size: 1.5em;
+        text-align: center;
+        box-shadow: 0 0 1em 0.25em rgba(0, 0, 0, 0.2);
+      }
+
+      .countries-list {
+        overflow: auto;
+        padding-left: 0;
+        list-style-type: none;
+        color: white;
+        line-height: 2;
+        height: 100vh;
+      }
+
+      .countries-list li {
+        animation: fadeIn 0.35s;
+        animation-fill-mode: both;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          display: none;
+        }
+
+        to {
+          opacity: 1;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-cont">
+      <input type="text" placeholder="Search for a country..." />
+      <ul class="countries-list"></ul>
+    </div>
+    <script src="countries-db.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
